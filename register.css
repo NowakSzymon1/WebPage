@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(106,150,184);
+    background: linear-gradient(270deg, rgba(50,101,140,1) 0%, rgba(20,47,94,1) 50%, rgba(32,35,42,1) 100%);
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+#registerPanel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 480px;
+    padding: 70px 40px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.7);
+}
+#Avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: center;
+}
+h1{
+    margin: 0;
+    padding: 0 0 26px;
+    color: #2b648a;
+    text-align: center;
+}
+#registerPanel p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: whitesmoke;
+}
+#registerPanel input{
+    width: 100%;
+    margin-bottom: 14px;
+}
+#registerPanel input[type="text"],
+#registerPanel input[type="email"],
+#registerPanel input[type="password"] {
+    border: 8px;
+    border-bottom: 1px sollid white;
+    background: transparent;
+    outline: 0;
+    height: 35px;
+    color: white;
+    font-size: 16px;
+}
+
+::placeholder{
+    color: gray;
+}
+#registerPanel input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #A9A9A9;
+    font-size: 16px;;
+    background-color: #2b648a;
+    cursor: pointer;
+    border-radius: 20px;
+}
+#registerPanel input[type="submit"]:hover{
+    background-color: #040e29;
+    color: white;
+    font-weight: bold;
+    transition: 0.7s;
+}
+#registerPanel a{
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+#registerPanel a:hover{
+    color:  #A9A9A9;
+}
+#fatallError{
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+    font-weight: bold;
+    padding: 0;
+    color: red;
+}
+#wrongEmail{
+    display: none;
+    font-size: 12px;
+    margin-top: -20px;
+    padding: 0;
+    color: red;
+}
+#wrongPassword{
+    display: none;
+    font-size: 12px;
+    margin-top: -20px;
+    padding: 0;
+    color: red;
+}
+#wrongSecondPassword{
+    display: none;
+    font-size: 12px;
+    margin-top: -20px;
+    padding: 0;
+    color: red;
+}
+#wrongKod{
+    display: none;
+    font-size: 12px;
+    margin-top: -20px;
+    padding: 0;
+    color: red;
+}

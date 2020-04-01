@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(106,150,184);
+    background: linear-gradient(270deg, rgba(50,101,140,1) 0%, rgba(20,47,94,1) 50%, rgba(32,35,42,1) 100%);
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+#loginPanel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 450px;
+    padding: 70px 40px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.7);
+}
+#Avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: center;
+}
+h1{
+    margin: 0;
+    padding: 0 0 26px;
+    color: #2b648a;
+    text-align: center;
+}
+#loginPanel p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: whitesmoke;
+}
+#loginPanel input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+#loginPanel input[type="text"],
+#loginPanel input[type="password"] {
+    border: 10px;
+    border-bottom: 1px sollid white;
+    background: transparent;
+    outline: 0;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+::placeholder{
+    color: gray;
+}
+#loginPanel input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #A9A9A9;
+    font-size: 16px;;
+    background-color: #2b648a;
+    cursor: pointer;
+    border-radius: 20px;
+}
+#loginPanel input[type="submit"]:hover{
+    background-color: #040e29;
+    color: white;
+    font-weight: bold;
+    transition: 0.7s;
+}
+#loginPanel a{
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+#loginPanel a:hover{
+    color:  #A9A9A9;
+}
+#loginError{
+    display: none;
+    font-size: 12px;
+    margin-top: -20px;
+    padding: 0;
+    color: red;
+}
+#passwordError{
+    display: none;
+    font-size: 12px;
+    margin-top: -20px;
+    padding: 0;
+    color: red;
+}
+
+footer{
+    bottom: 1%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -8%);
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 10px;
+    color: whitesmoke;
+}

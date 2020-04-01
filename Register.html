@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Rejestracja</title>
+    <meta name='viewport' content='width=device-width initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='register.css'>
+</head>
+<body>
+    <section>
+        <div id="registerPanel">
+            <img id="Avatar" src="https://lh3.googleusercontent.com/t5hjizdMLklADpjzFOEjt88VUizk9Sjk1r3K80v7j8KJkuiTDyK7Kc3K_mh-0Kd3jArW">
+            <form name ="Registation" id="Registation" metod="post" onsubmit="return register();" > 
+                <h2 id="fatallError"></h2>
+                <p>Podaj e-mail</p>
+                <input type="email" id="emailInput" name="email" placeholder="Podaj e-mail" onblur="emailCheck();">
+                <h2 id="wrongEmail"></h2>
+                <p>Podaj hasło</p>
+                <input type="password" id="passwordInput" name="password" placeholder="Podaj hasło" onblur="passwordCheck();">
+                <h2 id="wrongPassword"></h2>
+                <p>Powtórz hasło</p>
+                <input type="password" id="passwordSecondInput" name="passwordSecond" placeholder="Powtórz hasło" onblur="secondPasswordCheck();">
+                <h2 id="wrongSecondPassword"></h2>
+                <p>Podaj KOD</p>
+                <input type="text" id="kodInput" name="kod" placeholder="Podaj kod" onblur="kodCheck();">
+                <h2 id="wrongKod"></h2>
+                <input type="submit" value="Rejestracja" id="send">
+                    <a href="LoginPanel.html">Wróć Do Logowania</a>
+            </form>
+        </div>
+    </section>
+    <script src='register.js'></script>
+</body>
+</html>

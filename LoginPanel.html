@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login Panel</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Login.css'>
+</head>
+<body>
+    <section>
+        <div id="loginPanel">
+            <img id="Avatar" src="https://lh3.googleusercontent.com/t5hjizdMLklADpjzFOEjt88VUizk9Sjk1r3K80v7j8KJkuiTDyK7Kc3K_mh-0Kd3jArW">
+            <h1>Witaj Adminie</h1>
+            <form name="Access" metod="post" onsubmit="return access();">
+                <p>Podaj login</p>
+                <input type="text" id="loginInput" name="login" placeholder="Podaj login lub e-mail">
+                <h2 id="loginError"></h2>
+                <p>Podaj hasło</p>
+                <input type="password" id="passwordInput" name="password" placeholder="Podaj hasło">
+                <h2 id="passwordError"></h2>
+                <input type="submit" value="Zaloguj">
+                    <a href="Forget.html">Zapomniałeś hasła?</a>
+                    <br>
+                    <a href="Register.html">Nie posiadasz jeszcze konta?</a>
+                    <br>
+                    <a href="Help.html">Pomoc i kontakt</a>
+                    <br>
+                    <a href="index.html">Wróć do strony głównej </a>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>Stronę przygotował: Szymon Nowak Wszelkie prawa zastrzeżone<p>
+      </footer>
+    <script src='Login.js'></script>
+</body>
+</html>
